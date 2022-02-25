@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>One Column - Minimaxing by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{url_for('static', filename = 'assets/css/main.css')}}" />
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<header id="header">
+									<h1><a href="upload" id="logo">Food Detector</a></h1>
+								</header>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+			<!-- Main -->
+				<div style = "text-align: center">
+					
+					<p>
+						<button type="button" onclick="location.href='/upload' ">뒤로가기</button>
+					</p>
+				
+					{% if img %}
+						<p>
+							업로드한 이미지 : {{img}}
+						</p>
+						<h3>Detect 결과</h3>
+						<p style="width:50%;height:50%x;float:left;overflow:hidden;">
+							<img alt = "1" style = "height: 100%;" src="{{ url_for('static', filename='food/' + img) }}" width="256" height="256">
+						</p>
+
+						<p style="width:50%;height:50%;overflow:hidden;">
+							<img alt = "2" style = "height: 100%;" src="{{ url_for('static' ,filename='detect-output/exp/' + img) }}" width="256" height="256">
+						</p>
+					{% endif %}
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<div id="copyright">
+									&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="{{url_for('static', filename = 'assets/js/jquery.min.js')}}"></script>
+		<script src="{{url_for('static', filename = 'assets/js/browser.min.js')}}"></script>
+		<script src="{{url_for('static', filename = 'assets/js/breakpoints.min.js')}}"></script>
+		<script src="{{url_for('static', filename = 'assets/js/util.js')}}"></script>
+		<script src="{{url_for('static', filename = 'assets/js/main.js')}}"></script>
+
+	</body>
+</html>
