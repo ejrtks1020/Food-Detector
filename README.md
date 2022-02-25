@@ -1,1 +1,1 @@
-Food Image Detector (Yolov5, Flask)
+# Food Image Detector (Ultralytics Yolov5, Flask)
