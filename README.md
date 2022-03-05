@@ -1,4 +1,4 @@
-# Food Image Detector (Ultralytics Yolov5, Flask)(ejrtks1020.pythonanywhere.com)
+# [Food Image Detector (Ultralytics Yolov5, Flask)](ejrtks1020.pythonanywhere.com)
 
 ## 실행화면
 <p align="center">
