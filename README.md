@@ -1,13 +1,13 @@
 # [Food Image Detector (Ultralytics Yolov5, Flask)](ejrtks1020.pythonanywhere.com)
 
-음식 종류
--hamburger
--pasta
--pizza
--rice
--sausage
--steak
--sushi
+## 학습시킨 음식 종류
+* hamburger
+* pasta
+* pizza
+* rice
+* sausage
+* steak
+* sushi
 
 ## 실행화면
 <p align="center">
